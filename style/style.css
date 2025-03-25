@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+
+
+body{
+    overflow-x: hidden;
+}
+header {
+    background-image: url("../images/img/1.png");
+    height: 100vh; /* Full viewport height */
+    background-repeat: no-repeat;
+    background-size: cover; /* Scale image to cover the area */
+    background-position: center; /* Center the image */
+    max-width: 100%; /* Prevent expansion beyond container */
+    overflow: hidden; /* Hide overflow if any */
+}
+
+
+nav {
+   
+   
+    display: flex;
+    justify-content: center;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    padding-right: 30px;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 22px;
+    text-decoration: none;
+    font-family:questrial, sans-serif;
+    color: #ffffff;
+    font-size: 1.1rem;
+    
+}
+nav .mainMenu li a:hover {
+    background: #f3f1f0e3;
+    border-radius: 15px;
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu, .icons i  {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+   
+}
+.openMenu i  {
+    color: #fff;
+}
+
+
+
+   
+
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-youtube:hover {color: rgb(255, 30, 0);}
+
+ .logo {
+    margin-top: 20px;
+    margin: 6px;
+    font-size: 35px;
+    cursor: pointer;
+    text-align: center;
+    color: #938411;
+   
+}
+.logo-mob{
+    display: none;
+    font-family:  "Yeseva One", serif;
+  
+}
+
+.button-container {
+   margin-left: 70%;
+   margin-top: 195px;
+  
+}
+.button-container a {
+
+    display: block;
+    font-family: questrial, sans-serif;
+    width: 140px;
+    margin: 10px;
+    text-align: center;
+    color: azure;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #C79288;
+    text-decoration: none; /* Remove underline */
+   
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+  
+}
+
+
+
+.button-container a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+@media(max-width: 600px){
+    header {
+        background-image: url("../images/homeImg/1.png");
+       
+        height: 90vh; /* Full viewport height */
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center; /* Center the image */
+    }
+    nav{
+        justify-content: start;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-mob{
+        display: flex;
+        justify-content: end;
+        margin-left: 240px;
+        margin-top: 25px;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #bb9a09ca;
+        font-family: "Archivo", serif;
+ 
+        
+    }
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        color: #000000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu li a{
+        color: #000000;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgba(68, 61, 55, 0.931);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+@media(max-width: 480px){
+.button-container {
+    margin-left: 60%;
+    margin-top: 195px;
+   
+ }
+ .logo-mob{
+    margin-left: 110px;
+ }
+}
+
+
+footer{
+    background-color: rgb(255, 255, 255);
+    color:black;
+    font-size: 14px;
+    text-align: center;
+    padding: 25px 0px 15px 0px;
+    margin-top: 20px;
+    margin-bottom: 0px!important;
+}
+footer .media{
+    padding-top: 10px;
+    font-size: 20px;
+    color:black;
+    padding-bottom: 10px;
+}
+footer .media i{
+    color: #C79288;
+}
+
+
+/*whatsapp */
+.chat {
+    position: fixed;
+    font-family: questrial, sans-serif;
+    right: 40px;
+    bottom: 85px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid seagreen; /* Added 'solid' for proper border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Example shadow */
+}
+
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:24px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+.mob{
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
