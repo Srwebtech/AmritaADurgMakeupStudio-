@@ -17,7 +17,7 @@ body{
     overflow-x: hidden;
 }
 header {
-    background-image: url("../images/img/1.png");
+    background-image: url("../images/wide.png");
     height: 100vh; /* Full viewport height */
     background-repeat: no-repeat;
     background-size: cover; /* Scale image to cover the area */
