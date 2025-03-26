@@ -78,8 +78,8 @@ img {
 
 #content1 p, #content2 p {
     width: 48%;
-    max-width: 475px;
-    padding: 20px;
+    max-width: 90%;
+    padding: 10px;
     margin-top: 10px;
 }
 
@@ -100,7 +100,7 @@ img {
 
     #content1 p, #content2 p {
         width: 100%;
-        padding: 15px;
+        padding: 8px;
     }
 
     #content1, #content2 {
