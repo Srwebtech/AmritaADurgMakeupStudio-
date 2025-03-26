@@ -121,7 +121,7 @@ nav .mainMenu .closeMenu, .icons i  {
 
 @media(max-width: 600px){
     header {
-        background-image: url("../images/homeImg/1.png");
+        background-image: url("../gallery/1.jpg");
        
         height: 90vh; /* Full viewport height */
         background-repeat: no-repeat;
@@ -137,16 +137,20 @@ nav .mainMenu .closeMenu, .icons i  {
     .logo-mob{
         display: flex;
         justify-content: end;
-        margin-left: 320px;
-        padding-left: 48px;
+        margin-left: 240px;
+        padding-left: 42px;
         margin-top: 20px;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-weight: 500;
-        color: #eac41aee;
+        color: #f7f4eaee;
         font-family: "Archivo", serif;
  
         
     }
+    
+    
+
+    
     nav .mainMenu {
         height: 100vh;
         position: fixed;
@@ -188,7 +192,7 @@ nav .mainMenu .closeMenu, .icons i  {
 @media(max-width: 480px){
 .button-container {
     margin-left: 60%;
-    margin-top: 195px;
+    margin-top: 235px;
    
  }
  .logo-mob{
