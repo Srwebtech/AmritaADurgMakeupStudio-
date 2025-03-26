@@ -24,7 +24,6 @@ body{
     padding: 25px 0;
     font-family: Montserrat, sans-serif;
 }
-
 .body-inside {
     max-width: 1000px;
     background-color: whitesmoke;
@@ -109,17 +108,36 @@ img {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    /* For screens between 400px and 600px */
+    #content1 p, #content2 p {
+        font-size: 14px; /* Smaller font size */
+        line-height: 18px; /* Smaller line height for better readability */
+        width: 100%; /* Make paragraphs take full width */
+        text-align: justify; /* Justify the text */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+
+    #content1, #content2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust image size to be slightly larger */
+    #content1 img, #content2 img {
+        width: 80%;
+    }
+    #content1 h1, #content2 h1 { 
+    font-size: 18px;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     /* For very small screens */
     #content1, #content2 {
         padding: 0 10%;
     }
 }
-
-
-
-
-
 
 
 
