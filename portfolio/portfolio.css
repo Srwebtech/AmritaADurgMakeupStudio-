@@ -31,7 +31,7 @@ body {
 .container {
   max-width: 80rem;
   width: 100%;
-  padding: 4rem 2rem;
+  padding: 1rem 1rem;
   margin: 0 auto;
 }
 
@@ -45,7 +45,7 @@ body {
 .main .card {
   color: #252a32;
   border-radius: 2px;
-  background: #d6c845;
+  /* background: #d6c845; */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
 }
 .main .card-image {
@@ -53,8 +53,8 @@ body {
   display: block;
   width: 100%;
   padding-top: 70%;
-  border-radius: 40px;
-  background: #f5f4f4;
+  border-radius: 16px;
+  /* background: #f5f4f4; */
 }
 .main .card-image img {
   display: block;
@@ -69,8 +69,8 @@ body {
 @media only screen and (max-width: 600px) {
   .main .container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);;
+    grid-gap: 0.5rem;
   }
 }
 
