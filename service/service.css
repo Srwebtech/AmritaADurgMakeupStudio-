@@ -25,127 +25,85 @@ body{
     font-family: Montserrat, sans-serif;
 }
 
+/* General Styles */
 .body-inside {
     max-width: 1000px;
     background-color: whitesmoke;
-    min-height: 1500px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .wrap {
-    margin: 25px;
-    background-color: none;
-    min-height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 0 20px;
 }
 
-.body-inside p {
-    letter-spacing: 1px;
-    font-family: Questrial, sans-serif;
-    line-height: 22px;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    margin: 0 auto;
-    display: block;
-}
-
-/* Styling for Content Sections */
-#content1, #content2 {
-    background-color: none;
-    min-height: 300px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#content1 h1, #content2 h1 {
+/* Service Card Styles */
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    padding: 10px 80px;
-    font-family: Montserrat, sans-serif;
-    width: 100%;
-    font-size: 24px;
 }
 
-#content1 img, #content2 img {
-    width: 48%;
-    margin: 20px 1%;
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-#content1 p, #content2 p {
-    width: 48%;
-    max-width: 90%;
-    padding: 10px;
-    margin-top: 10px;
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-#content1 p {
-    text-align: justify;
+/* Service Title */
+.service-card h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
 }
 
-#content2 p {
-    text-align: justify;
+/* Service Description */
+.service-card p {
+    font-size: 14px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 680px) {
-    /* For small screens */
-    #content1 img, #content2 img {
-        width: 100%;
-        height: auto;
+/* For Smaller Screens */
+@media only screen and (max-width: 768px) {
+    .service-card {
+        padding: 15px;
     }
 
-    #content1 p, #content2 p {
-        width: 100%;
-        padding: 8px;
+    .service-card h1 {
+        font-size: 18px;
     }
 
-    #content1, #content2 {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    /* For screens between 400px and 600px */
-    #content1 p, #content2 p {
-        font-size: 14px; /* Smaller font size */
-        line-height: 18px; /* Smaller line height for better readability */
-        width: 100%; /* Make paragraphs take full width */
-        text-align: justify; /* Justify the text */
-        padding: 5px; /* Reduced padding */
-        margin: 5px 0; /* Reduced margin */
-    }
-
-    #content1, #content2 {
-        flex-direction: column;
-        align-items: flex-start; /* Align text and image separately */
-    }
-
-    /* Adjust image width to take full screen width */
-    #content1 img, #content2 img {
-        width: 100%; /* Make images full width in mobile view */
-        margin-bottom: 10px; /* Add some space below image */
+    .service-card p {
+        font-size: 13px;
     }
 }
 
-@media only screen and (max-width: 400px) {
-    /* For very small screens */
-    #content1, #content2 {
-        padding: 0 5%;
+@media only screen and (max-width: 480px) {
+    .service-card {
+        padding: 10px;
     }
 
-    #content1 p, #content2 p {
-        padding: 3px; /* Very little padding on smaller screens */
-        margin: 3px 0; /* Very little margin */
+    .service-card h1 {
+        font-size: 16px;
     }
 
-    /* Ensure images still take full width */
-    #content1 img, #content2 img {
-        width: 100%; /* Ensure images are full width */
+    .service-card p {
+        font-size: 12px;
     }
 }
 
